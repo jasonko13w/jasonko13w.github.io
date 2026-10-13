@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jason Wang｜作品集</title>
+<meta name="description" content="Jason Wang 的作品集：把餐飲現場的營運經驗，做成用得上的 AI 工具。">
+<style>
+  :root{
+    --bg:#faf8f5; --surface:#ffffff; --text:#1f1f1f; --text-2:#5b5b5b; --muted:#8a8a8a;
+    --border:#e7e2db; --accent:#e8663a; --accent-soft:#fdeee7;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#161514; --surface:#1f1e1c; --text:#f1efec; --text-2:#c4c0ba; --muted:#8f8a84;
+      --border:#33302c; --accent:#f07a50; --accent-soft:#3a2219;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#161514; --surface:#1f1e1c; --text:#f1efec; --text-2:#c4c0ba; --muted:#8f8a84;
+    --border:#33302c; --accent:#f07a50; --accent-soft:#3a2219;
+  }
+  *{ box-sizing:border-box; }
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+    line-height:1.7; padding:0 16px;
+  }
+  .wrap{ max-width:760px; margin:0 auto; padding:72px 0 56px; }
+  header h1{ font-size:40px; line-height:1.15; margin:0 0 12px; letter-spacing:-.01em; }
+  header .lead{ font-size:18px; color:var(--text-2); margin:0; max-width:34em; }
+  .tags{ display:flex; flex-wrap:wrap; gap:8px; margin-top:20px; }
+  .tag{ font-size:13px; font-weight:600; color:var(--text-2); border:1px solid var(--border); background:var(--surface); border-radius:999px; padding:4px 12px; }
+  h2{ font-size:14px; font-weight:700; letter-spacing:.08em; color:var(--muted); margin:56px 0 16px; }
+  .card{
+    display:block; text-decoration:none; color:inherit;
+    background:var(--surface); border:1px solid var(--border); border-radius:18px; padding:24px;
+    transition:border-color .15s, transform .15s;
+  }
+  .card:hover{ border-color:var(--accent); transform:translateY(-2px); }
+  .card:focus-visible{ outline:3px solid var(--accent); outline-offset:3px; }
+  .card .kicker{ display:inline-block; font-size:12px; font-weight:700; color:var(--accent); background:var(--accent-soft); border-radius:999px; padding:2px 10px; }
+  .card h3{ font-size:24px; margin:12px 0 6px; }
+  .card p{ margin:0; color:var(--text-2); }
+  .card ul{ margin:14px 0 0; padding-left:1.2em; color:var(--text-2); font-size:15px; }
+  .card .go{ display:inline-block; margin-top:18px; font-weight:700; color:var(--accent); }
+  .more{ border:1px dashed var(--border); border-radius:18px; padding:20px 24px; color:var(--muted); margin-top:16px; font-size:15px; }
+  footer{ margin-top:64px; font-size:13px; color:var(--muted); }
+  @media (max-width:600px){
+    .wrap{ padding:48px 0 40px; }
+    header h1{ font-size:32px; }
+    header .lead{ font-size:16px; }
+    .card{ padding:20px; }
+    .card h3{ font-size:21px; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Jason Wang</h1>
+      <p class="lead">十年餐飲與營運現場經驗。我把每天重複、耗時的營運工作，做成老闆和店長用得上的 AI 工具。</p>
+      <div class="tags">
+        <span class="tag">餐飲營運</span>
+        <span class="tag">流程與 SOP</span>
+        <span class="tag">AI 導入</span>
+        <span class="tag">POS 數據</span>
+      </div>
+    </header>
+
+    <h2>作品</h2>
+    <a class="card" href="/AI-project2026/">
+      <span class="kicker">餐飲 × 數據</span>
+      <h3>餐飲AI助理</h3>
+      <p>讀懂 POS 報表，直接告訴老闆這個月發生什麼事、下一季該主打什麼。</p>
+      <ul>
+        <li>把 POS 匯出的 Excel 丟進去，自動整理成月報</li>
+        <li>看出營業額變化是因為來客數還是客單價</li>
+        <li>推薦下一季主打商品；支援連鎖分店比較</li>
+        <li>沒有 POS 也能用：建好菜單，每天只填數量</li>
+      </ul>
+      <span class="go">打開試用 →</span>
+    </a>
+    <div class="more">更多作品陸續加入中。</div>
+
+    <footer>© 2026 Jason Wang</footer>
+  </div>
+</body>
+</html>
