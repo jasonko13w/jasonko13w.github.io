@@ -1,4 +1,4 @@
-# Jason Wang 作品集
+# 王序名（Jason Wang）作品集
 
 網址：https://jasonwanit.com
 
