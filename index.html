@@ -28,7 +28,11 @@
   }
   .wrap{ max-width:760px; margin:0 auto; padding:72px 0 56px; }
   header h1{ font-size:40px; line-height:1.15; margin:0 0 12px; letter-spacing:-.01em; }
-  header .lead{ font-size:18px; color:var(--text-2); margin:0; max-width:34em; }
+  /* 中文只在標點處換行，避免一個詞被拆到兩行；真的太長才允許任意斷開 */
+  .intro{ max-width:42em; }
+  header .lead{ font-size:18px; line-height:1.85; color:var(--text-2); margin:0 0 12px; word-break:keep-all; overflow-wrap:anywhere; text-wrap:pretty; }
+  header .lead:last-child{ margin-bottom:0; }
+  header .lead strong{ color:var(--text); font-weight:700; }
   .tags{ display:flex; flex-wrap:wrap; gap:8px; margin-top:20px; }
   .tag{ font-size:13px; font-weight:600; color:var(--text-2); border:1px solid var(--border); background:var(--surface); border-radius:999px; padding:4px 12px; }
   h2{ font-size:14px; font-weight:700; letter-spacing:.08em; color:var(--muted); margin:56px 0 16px; }
@@ -59,7 +63,11 @@
   <div class="wrap">
     <header>
       <h1>Jason Wang</h1>
-      <p class="lead">十年餐飲與營運現場經驗。我把每天重複、耗時的營運工作，做成老闆和店長用得上的 AI 工具。</p>
+      <div class="intro">
+        <p class="lead"><strong>觀察、理解，然後提出建議。</strong>這是我從餐飲現場、品牌與數據行銷，到顧問式銷售，一路走來最擅長、也最有熱情的事。</p>
+        <p class="lead">我喜歡了解不同產業的邏輯與挑戰，協助別人把狀況看清楚，找出下一步。</p>
+        <p class="lead">這裡放的，都是從真實狀況變成實際工具的過程。</p>
+      </div>
       <div class="tags">
         <span class="tag">餐飲營運</span>
         <span class="tag">流程與 SOP</span>
